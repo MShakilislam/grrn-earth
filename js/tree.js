@@ -22,7 +22,7 @@ const displayPlants = (plants) => {
 
     card.innerHTML = `
       <img src="${plant.image}" alt="${plant.name}" class="w-full h-40 object-cover rounded mb-2"/>
-      <h2 onclick="loadWordData(${plant.id})" class="text-lg font-semibold">${plant.name}</h2>
+      <h2 onclick="loadWordData(${plant.id})" class="text-lg font-semibold cursor-pointer">${plant.name}</h2>
       <p class="text-sm text-gray-600">${plant.description}...</p>
       <div class="flex items-center justify-between">
         <p class="text-sm text-yellow-600 font-medium">${plant.category}</p>
@@ -91,8 +91,8 @@ const loadWordData = async (id) => {
 const displayWordDetails = (plant) => {
   const detailBox = document.getElementById("details-container");
   detailBox.innerHTML = `
-    <div class="space-y-5">
-      <img src="${plant.image}" alt="" class="w-full h-70">
+    <div class="space-y-3">
+      <img src="${plant.image}" alt="" class="w-full h-[200px] ">
       <p class="text-xl font-bold">Name: ${plant.name}</p>
       <p class="text-sm text-yellow-600 font-medium">Description: ${plant.description}</p>
       <p class="font-bold text-green-600 mt-2">Category: ${plant.category}</p>

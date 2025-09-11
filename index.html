@@ -93,12 +93,10 @@
             <button class="hover:bg-green-600 hover:text-white w-full py-2 px-3 cursor-pointer rounded-sm text-left">All Trees</button>
             <div class="left-side md:col-span-2 h-auto md:h-[440px]" id="level-container">
 
-                <!-- এখানে কনটেন্ট আসবে -->
             </div>
         </div>
         <!-- Middle / Card Container -->
         <div id="card-container" class="md:col-span-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Card Items এখানে লোড হবে -->
         </div>
 
         <!-- Right Side / Cart -->
@@ -107,6 +105,20 @@
         </div>
 
     </section>
+
+    
+    <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+      <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <div id="details-container" class=""></div>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
 
 
     <script src="./js/tree.js"></script>
