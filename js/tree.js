@@ -43,6 +43,7 @@ const loadLessons = () => {
     });
 };
 
+
 // Display lessons
 const displayLessons = (lessons) => {
   const levelContainer = document.getElementById("level-container");
