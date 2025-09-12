@@ -121,7 +121,7 @@ const displayCart = () => {
   cart.forEach((item, index) => {
     total += Number(item.price);
     const div = document.createElement("div");
-    div.classList.add("flex", "items-center", "bg-white", "rounded", "shadow", "h-15", "mt-5", "justify-between", "px-2");
+    div.classList.add("flex", "items-center", "bg-[#F0FDF4]", "rounded", "shadow", "h-15", "mt-5", "justify-between", "px-2");
 
     div.innerHTML = `
       <span class="font-semibold">${item.name}</span>
